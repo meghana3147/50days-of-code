@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="myinput">
+    <script>
+        document.getElementById("myinput").addEventListener("input",function() {
+        console.log("current input:"+this.value);
+    }); 
+    </script>
+<!--change -->
+    <select id="myinput1">
+        <option>Apple</option>
+        <option>Banana</option>
+    </select>
+    <script>
+        document.getElementById("myinput1").addEventListener("change",function(){
+            alert("input changed to:"+this.value);
+    });
+    </script>
+    <!--submit-->
+    <div class="section">
+        <h2>submit</h2>
+        <form id="myForm">
+            <input type="text" placeholder="your name">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    <script>
+    document.getElementById("myForm").addEventListener("submit",function(event){
+     event.preventDefault();
+     alert("form submitted!");
+    });
+    </script>
+    <input id="dblclick">
+    <script>
+    document.getElementById("dblclick").addEventListener("dblclick",function(){
+     alert("double click detected!");
+    });
+</script>
+<!--focus-->
+    <input type="text" id="myinput2">
+    <script>
+        document.getElementById("myinput2").addEventListener("focus",function(){
+        this.style.backgroundColor="lightblue";
+        }); 
+        document.getElementById("myinput2").addEventListener("blur",function(){
+        this.style.backgroundColor="green";
+        }); 
+    </script>
+</body>
+</html>
