@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sub">-</p>
+    <p id="zero">0</p>
+    <p id="plus">+</p>
+
+    <script>
+        let count=0;
+        let a=document.getElementById("sub");
+        a.style.color="red";
+        let b=document.getElementById("zero");
+        b.style.color="darkgreen";
+        let c=document.getElementById("plus");
+        c.style.color="red";
+        a.addEventListener("click",function(){
+        count--;
+        b.innerHTML=count;
+        });
+        c.addEventListener("click",function(){
+        count++;
+        b.innerHTML=count;
+        });
+    </script>
+</body>
+</html>

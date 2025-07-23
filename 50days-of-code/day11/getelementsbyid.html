@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <p id="demo">Meghana</p>
+        <script>
+            const para=document.getElementById("demo");
+            para.style.color="red";
+            para.style.fontSize="larger";
+            para.style.fontStyle="italic";
+            para.style.background="yellow";
+        </script>
+        <p class="text">Meghana</p>
+        <p class="text">safura</p>
+        <p class="text">sanjana</p>
+        <script>
+            const items=document.getElementsByClassName("text");
+            for(let i=0;i<items.length;i++){
+                items[i].style.color="red";
+            }
+        </script>
+</body>
+</html>

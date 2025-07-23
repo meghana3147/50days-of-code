@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Heaven</title>
+   <link rel="stylesheet" href="styles_coffee.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+  nav{
+            background-color: aqua;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin:0;
+            padding: 0;
+        }
+        nav ul li a{
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0;
+        }
+        nav ul li a:hover{
+            text-decoration: underline;
+        }
+        section{
+            padding: 100px 20px 60px;
+            margin-top: 60px;
+            min-height: 100vh;
+        }
+        #Home{
+            background-color:aqua;
+        }
+        #About{
+            background-color:rgb(red, hsl(150, 94%, 52%), blue)
+        }
+        #Menu{
+            background-color: green
+        }
+        #Contact{
+            background-color: blueviolet
+        }
+</style>
+  </head>
+<body>
+<header class="header">
+  <div class="logo">
+    <img src="logo.jpg" alt="logo">
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Menu</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+<section id="Home">
+  <div class="heading">
+    <h1>Coffee Heaven</h1>
+    <p>“Coffee isn’t just a drink — it’s a moment of peace, comfort, and warmth.”</p>
+    <p>In every sip of coffee, there’s comfort, connection, and creativity. It’s the quiet companion to early mornings, deep conversations, and inspired thoughts — brewed to awaken both body and mind.</p></div>
+</section>
+<section id="About">
+  <div class="about">
+    <div class="image-box">
+      <img src="about.jpg" alt="Coffee Girl">
+    </div>
+    <div class="text-box">
+      <h2>A Cup Of Coffee Can Complete Your Day</h2>
+      <p>CAFE HOURS: 8am - 6pm everyday<br>KITCHEN HOURS: 8am - 4pm everyday</p>
+    </div>
+  </div>
+</section>
+<section class="facility-section">
+  <h2 class="facility-title">Our Facility</h2>
+  <div class="facility-grid">
+    <div class="facility-item">
+      <img src="cup.jpg" alt="Varieties of Coffees">
+      <h3>Varieties Of Coffees</h3>
+      <p>Cappuccino blends milk and foam,Mocha adds chocolatey sweetness,Latte is creamy with more steamed milk,Iced Coffee is chilled.</p>
+    </div>
+
+    <div class="facility-item">
+      <img src="beans.png" alt="Coffee Beans">
+      <h3>Coffee Beans</h3>
+      <p>Arabica is smooth and slightly sweet, Robusta is strong and high in caffeine, Liberica offers bold smoky flavors, and Excelsa adds a tart, fruity twist to coffee blends.</p>
+    </div>
+
+    <div class="facility-item">
+      <img src="bread.png" alt="Breakfast and Sweets">
+      <h3>Breakfast And Sweets</h3>
+      <p>Pancakes are fluffy, Waffles are crispy, Omelettes are savory, Croissants are buttery, Donuts are sweet, Muffins are soft, Brownies are rich, and Pastries are filled with creams or jams.</p>
+    </div>
+</section>
+<section class="facility-section">
+  <h2 class="facility-title">Popular Menu</h2>
+  <div class="menu">
+    <div class="coffee-item">
+      <img src="coffee1.jpg" alt="Love Heart Coffee">
+      <div class="coffee-name">Love Heart Coffee</div>
+      <button>order</button>
+    </div>
+    <div class="coffee-item">
+      <img src="coffee2.avif" alt="Cappuccino">
+      <div class="coffee-name">Cappuccino</div>
+      <button>order</button>
+    </div>
+    <div class="coffee-item">
+      <img src="coffee3.jpg" alt="Mocha Coffee">
+      <div class="coffee-name">Mocha Coffee</div>
+      <button>order</button>
+    </div>
+    <div class="coffee-item">
+      <img src="coffee4.jpg" alt="Black Coffee">
+      <div class="coffee-name">Black Coffee</div>
+      <button>order</button>
+    </div>
+    <div class="coffee-item">
+      <img src="coffee5.jpg" alt="Frappuccino">
+      <div class="coffee-name">Frappuccino</div>
+      <button>order</button>
+    </div>
+    <div class="coffee-item">
+      <img src="coffee6.jpg" alt="Cold Coffee">
+      <div class="coffee-name">Cold Coffee</div>
+      <button>order</button>
+    </div>
+  </div>
+</section>
+<h2 align="center" class="facility-title">Contact Us</h2>
+<section class="booking-section">
+    <div class="booking-image">
+      <img src="booking.jpg" alt="People Talking">
+    </div>
+    <div class="booking-form">
+      <h2>Reserve A Table</h2>
+      <form>
+        <input type="text" placeholder="Enter Your Name" required>
+        <input type="tel" placeholder="Enter Your Number" required>
+        <input type="number" placeholder="No.of Guests" required>
+        <button type="submit">Submit Reservation</button>
+      </form>
+    </div>
+</section>
+<footer>
+  <div class="box-container">
+    <div class="box">
+      <h3>Email</h3>
+      <i class="fa-solid fa-envelope"></i>
+      <p>coffeeheaven123@gmail.com</p>
+    </div>
+    <div class="box">
+      <h3>Opening hours</h3><i class="fa-solid fa-clock"></i>
+      <p>08:00am to 6:00pm</p>
+    </div>
+    <div class="box">
+      <h3>Location</h3>
+      <i class="fa-solid fa-location-dot"></i>
+      <p>Hyderabad,India-500100</p>
+    </div>
+    <div class="box">
+      <h3>Contact Number</h3>
+      <i class="fa-solid fa-phone"></i>
+      <p>1234567891</p>
+    </div>
+</footer>
+</body>
+</html>

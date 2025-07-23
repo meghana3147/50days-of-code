@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="webpage1"></p>
+    <script>
+        let a=document.getElementById("webpage1");
+        let names=[
+        {firstname:"muthyala",lastname:"meghana",fullname:"muthyalameghana"}
+    ];
+        let m=names.map(num=> 
+        {
+            return "firstname:"+num.firstname+"</br>"+"lastname:"+num.lastname+"</br>"+"fullname:"+num.fullname;
+        });
+       a.innerHTML=m;
+    console.log("firstname:"+names.muthyala);
+    console.log("lastname:"+names.meghana);
+    console.log("fullname:"+names.muthyalameghana);
+ </script>
+</body>
+</html>
