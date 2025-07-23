@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="webpage"></p>
+    <script>
+        let a=document.getElementById("webpage");
+        let items=
+        {Car:"Thar",model:1234,year:2024};
+        document.getElementById("webpage");a.innerHTML="Car:"+items.Car+"     "+"model:"+items.model+"     "+"year:"+items.year;
+        console.log(items);
+        </script> 
+        <p id="abcd"></p>
+        <script>
+        let a1=document.getElementById("abcd");
+        let person1=[
+            {id:1244,name:"meghana",age:19},
+            {id:5432,name:"sdfghj",age:18},
+            {id:98765,name:"jhgfd",age:20},
+
+        ];
+        let add=person1.map(num=>{
+        return num.name;
+    });
+        a1.innerHTML=add;
+        console.log(add);
+      </script>
+          <p id="webpage1"></p>
+    <script>
+        let a2=document.getElementById("webpage1");
+        let names=
+        {firstname:"muthyala",lastname:"meghana",fullname:"muthyalameghana"};
+        document.getElementById("webpage1");a2.innerHTML="firstname:"+names.muthyala+"     "+"lastname:"+names.meghana+"     "+"fullname:"+names.muthyalameghana;
+        console.log("names");
+
+ </script>
+</body>
+</html>
